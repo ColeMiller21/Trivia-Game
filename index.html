@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Trivia Game</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1>Dallas Cowboys Trivia!!
+        </h1>
+
+        <h1 id="timer">00:00</h1>
+
+        <form id="trivia" name="trivia">
+            <p>In what year was the city of Dallas granted an NFL expansion franchise?</p>
+            <input type="radio" class="q1" name="question1" value="Answer">1960
+            <input type="radio" class="q1" name="question1" value="wrong">1958
+            <input type="radio" class="q1" name="question1" value="wrong">2001
+
+            <p>What player holds the Cowboys rookie record for tackles?</p>
+            <input type="radio" class="q2" name="question2" value="wrong">Jaylon Smith
+            <input type="radio" class="q2" name="question2" value="Answer">Leighton Vander Esch
+            <input type="radio" class="q2" name="question2" value="wrong">Sean Lee
+
+            <p>Which player holds the team record for longest reception by a rookie?</p>
+            <input type="radio" class="q3" name="question3" value="wrong">Dez Bryant
+            <input type="radio" class="q3" name="question3" value="Answer">Ezekiel Elliot
+            <input type="radio" class="q3" name="question3" value="wrong">Michael Irvin
+
+            <p>Who purchased the Dallas Cowboys in 1989?</p>
+            <input type="radio" class="q4" name="question4" value="wrong">Henry Ford
+            <input type="radio" class="q4" name="question4" value="Answer">Jerry Jones
+            <input type="radio" class="q4" name="question4" value="wrong">Bedford Wynne
+
+            <p>How many Super Bowls have the Dallas cowboys won?</p>
+            <input type="radio" class="q5" name="question5" value="wrong">3
+            <input type="radio" class="q5" name="question5" value="wrong">7
+            <input type="radio" class="q5" name="question5" value="Answer">5
+            <br>
+            <br>
+            <input id="button" type="button" value="Submit">
+
+        </form>
+
+        <div id="finished-div">
+            <p>Numer of Answers Correct: <span id="correct"></span></p>
+            <p>Number of Answers Wrong: <span id="wrong"></span></p>
+            <p>Not Completed: <span id="not-answered"></span></p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

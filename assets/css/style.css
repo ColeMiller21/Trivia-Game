@@ -1,0 +1,49 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+h1 {
+    font-size: 4vw;
+    text-align: center;
+}
+.container {
+    color: white;
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 45%;
+    padding: 10px;
+    
+    
+}
+p{
+    font-size: 20px;
+}
+
+#timer {
+    text-align: center;
+    font-size: 6vw;
+}
+
+#trivia {
+    text-align: center;
+}
+
+#finished-div {
+    visibility: hidden;
+}
+
+#button {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #47576c;
+    color: white;
+}

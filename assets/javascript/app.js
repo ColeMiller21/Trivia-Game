@@ -1,16 +1,12 @@
-var question1 = $(".q1").val();
-var question2 = $(".q2").val();
-var question3 = $(".q3").val();
-var question4 = $(".q4").val();
-var question5 = $(".q5").val();
 var valFilter;
 var filtered;
 var correct = 0;
 var wrong = 0;
-var unanswered = 0;
 var timer;
 var counter = 0;
 var timeLeft = 60;
+var message = [];
+var pictures = [];
 
 
 correctText = $("#correct");
@@ -115,11 +111,11 @@ $(document).ready(function () {
             console.log(wrong);
             wrong++;
         }
-
-
-
     })
 });
+
+
+
 
 
 
@@ -130,7 +126,27 @@ function displayFinished() {
     });
     $("#radio").css("visibility", "hidden");
     $("#timer").css("visibility", "hidden");
+
+}
+
+function displayMessage() {
+    message = ["You must be a true Cowboys fan!!", "Good Job!", "Wow... you must be an Eagles fan!"]
+    pictures = ["assets/images/5.gif", "assets/images/cowboys.jpg", "assets/images/eagles.jpg"]
+
+    if (correct === 5) {
+        $("#message").text(message[0]);
+        $("#image").attr("src", pictures[0]);
+    }
+    if (correct > 0 && correct < 5) {
+        $("#message").text(message[1]);
+        $("#image").attr("src", pictures[1]);
+    }
+    if (correct === 0) {
+        $("#message").text(message[2]);
+        $("#image").attr("src", pictures[2]);
+    }
 };
+
 
 
 
@@ -157,9 +173,10 @@ function startTime() {
 $("#start-button").on("click", function () {
     $("#start-button").css("visibility", "hidden");
     $("#start-screen").css("visibility", "hidden");
+    $("#title").css("visibility", "hidden");
     $("#quiz").css({
         "visibility": "visible", "position": "absolute",
-        "top": "20%"
+        "top": "10%"
     });
 
 
@@ -172,10 +189,12 @@ $("#button").on("click", function () {
     console.log("submit");
 
     displayFinished();
+    $("#title").css("visibility", "visible");
+    displayMessage();
 
     correctText.text(correct);
     wrongText.text(wrong);
-    unansweredText.text(unanswered);
+
 
 });
 

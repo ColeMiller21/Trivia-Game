@@ -1,10 +1,15 @@
 body {
     background-image: url("../images/background.jpg");
+    background-position: center center;
     background-size: cover;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+
 }
 
-h1 {
+#title {
     font-size: 4vw;
     text-align: center;
 }
@@ -14,7 +19,7 @@ h1 {
     height: auto;
     position: relative;
     left: 45%;
-    
+    text-align: center;
     
 }
 p{
@@ -35,6 +40,7 @@ p{
 }
 
 #button {
+    margin-bottom: 20px;
     padding: 10px;
     border: 1px solid black;
 }
@@ -58,4 +64,9 @@ p{
 }
 #quiz{
     visibility: hidden;
+}
+
+#image{
+    height: 300px;
+    width: 300px;
 }

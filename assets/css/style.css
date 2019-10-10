@@ -21,7 +21,7 @@ body {
     text-align: center;
     
 }
-p{
+.questions{
     font-size: 20px;
     font-family: 'PT Sans', sans-serif;
 }
@@ -62,6 +62,10 @@ p{
     background-color: #47576c;
     color: white;
 }
+
+
+
+
 #quiz{
     visibility: hidden;
 }

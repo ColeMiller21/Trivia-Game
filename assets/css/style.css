@@ -5,13 +5,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     
-    
-
 }
 
 #title {
     font-size: 4vw;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
 .container {
     color: white;
@@ -24,6 +23,7 @@ body {
 }
 p{
     font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 #timer {

@@ -13,6 +13,7 @@ correctText = $("#correct");
 wrongText = $("#wrong");
 unansweredText = $("#not-answered");
 
+
 $(document).ready(function () {
     var radio = $("input[name='question1']");
     radio.change(function () {
@@ -131,7 +132,7 @@ function displayFinished() {
 
 function displayMessage() {
     message = ["You must be a true Cowboys fan!!", "Good Job!", "Wow... you must be an Eagles fan!"]
-    pictures = ["assets/images/5.gif", "assets/images/cowboys.jpg", "assets/images/eagles.jpg"]
+    pictures = ["assets/images/zeke.jpg", "assets/images/cowboys.jpg", "assets/images/eagles.jpg"]
 
     if (correct === 5) {
         $("#message").text(message[0]);

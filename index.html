@@ -17,43 +17,48 @@
 
         <h1>Dallas Cowboys Trivia!!
         </h1>
-
-        <h1 id="timer"></h1>
-
-        <form id="trivia" name="trivia">
+        <div id="start-screen">
+            <p> Press the Start Quiz button to start the test!</p>
+            <p>You will have 1 minute to answer 5 trivia questions about the cowboys</p>
+            <p>Good Luck!!</p>
             <input id="start-button" type="button" value="Start Quiz">
+        </div>
+        <div id="quiz">
+            <h1 id="timer"></h1>
+            <form id="trivia" name="trivia">
 
-            <div id="radio">
-                <p>In what year was the city of Dallas granted an NFL expansion franchise?</p>
-                <input type="radio" class="q1" name="question1" value="answer">1960
-                <input type="radio" class="q1" name="question1" value="wrong">1958
-                <input type="radio" class="q1" name="question1" value="wrong">2001
 
-                <p>What player holds the Cowboys rookie record for tackles?</p>
-                <input type="radio" class="q2" name="question2" value="wrong">Jaylon Smith
-                <input type="radio" class="q2" name="question2" value="answer">Leighton Vander Esch
-                <input type="radio" class="q2" name="question2" value="wrong">Sean Lee
+                <div id="radio">
+                    <p>In what year was the city of Dallas granted an NFL expansion franchise?</p>
+                    <input type="radio" class="q" name="question1" value="answer">1960
+                    <input type="radio" class="q" name="question1" value="wrong">1958
+                    <input type="radio" class="q" name="question1" value="wrong">2001
 
-                <p>Which player holds the team record for longest reception by a rookie?</p>
-                <input type="radio" class="q3" name="question3" value="wrong">Dez Bryant
-                <input type="radio" class="q3" name="question3" value="answer">Ezekiel Elliot
-                <input type="radio" class="q3" name="question3" value="wrong">Michael Irvin
+                    <p>What player holds the Cowboys rookie record for tackles?</p>
+                    <input type="radio" class="q" name="question2" value="wrong">Jaylon Smith
+                    <input type="radio" class="q" name="question2" value="answer">Leighton Vander Esch
+                    <input type="radio" class="q" name="question2" value="wrong">Sean Lee
 
-                <p>Who purchased the Dallas Cowboys in 1989?</p>
-                <input type="radio" class="q4" name="question4" value="wrong">Henry Ford
-                <input type="radio" class="q4" name="question4" value="answer">Jerry Jones
-                <input type="radio" class="q4" name="question4" value="wrong">Bedford Wynne
+                    <p>Which player holds the team record for longest reception by a rookie?</p>
+                    <input type="radio" class="q" name="question3" value="wrong">Dez Bryant
+                    <input type="radio" class="q" name="question3" value="answer">Ezekiel Elliot
+                    <input type="radio" class="q" name="question3" value="wrong">Michael Irvin
 
-                <p>How many Super Bowls have the Dallas cowboys won?</p>
-                <input type="radio" class="q5" name="question5" value="wrong">3
-                <input type="radio" class="q5" name="question5" value="wrong">7
-                <input type="radio" class="q5" name="question5" value="answer">5
-                <br>
-                <br>
-                <input id="button" type="button" value="Submit">
-            </div>
-        </form>
+                    <p>Who purchased the Dallas Cowboys in 1989?</p>
+                    <input type="radio" class="q" name="question4" value="wrong">Henry Ford
+                    <input type="radio" class="q" name="question4" value="answer">Jerry Jones
+                    <input type="radio" class="q" name="question4" value="wrong">Bedford Wynne
 
+                    <p>How many Super Bowls have the Dallas cowboys won?</p>
+                    <input type="radio" class="q" name="question5" value="wrong">3
+                    <input type="radio" class="q" name="question5" value="wrong">7
+                    <input type="radio" class="q" name="question5" value="answer">5
+                    <br>
+                    <br>
+                    <input id="button" type="button" value="Submit">
+                </div>
+            </form>
+        </div>
 
         <div id="finished">
             <p>Numer of Answers Correct: <span id="correct"></span></p>

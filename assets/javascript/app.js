@@ -125,19 +125,19 @@ $(document).ready(function () {
 
 function displayFinished() {
     $("#finished").css({
-        "visibility": "visible", "position": "absolute", "top": "25%",
+        "visibility": "visible", "position": "absolute", "top": "25%", "left": "30%",
         "text-align": "center"
     });
     $("#radio").css("visibility", "hidden");
     $("#timer").css("visibility", "hidden");
-}
+};
 
 
 
 function startTime() {
 
     var timer = $("#timer");
-    timer.text("00:00");
+    timer.text("1:00");
 
     function timeIt() {
         counter++;
@@ -151,17 +151,6 @@ function startTime() {
     }
     setInterval(timeIt, 1000)
 }
-
-function timeUp() {
-    $("#finished").css({
-        "visibility": "visible", "position": "absolute", "top": "25%",
-        "text-align": "center"
-    });
-    $("#radio").css("visibility", "hidden");
-    $("#timer").css("visibility", "hidden");
-}
-
-setTimeout(timeUp, 60000);
 
 
 
@@ -182,13 +171,7 @@ $("#start-button").on("click", function () {
 $("#button").on("click", function () {
     console.log("submit");
 
-
-    $("#finished").css({
-        "visibility": "visible", "position": "absolute", "top": "25%", "left": "30%",
-        "text-align": "center"
-    });
-    $("#radio").css("visibility", "hidden");
-    $("#timer").css("visibility", "hidden");
+    displayFinished();
 
     correctText.text(correct);
     wrongText.text(wrong);

@@ -18,40 +18,44 @@
         <h1>Dallas Cowboys Trivia!!
         </h1>
 
-        <h1 id="timer">00:00</h1>
+        <h1 id="timer"></h1>
 
         <form id="trivia" name="trivia">
-            <p>In what year was the city of Dallas granted an NFL expansion franchise?</p>
-            <input type="radio" class="q1" name="question1" value="Answer">1960
-            <input type="radio" class="q1" name="question1" value="wrong">1958
-            <input type="radio" class="q1" name="question1" value="wrong">2001
+            <input id="start-button" type="button" value="Start Quiz">
 
-            <p>What player holds the Cowboys rookie record for tackles?</p>
-            <input type="radio" class="q2" name="question2" value="wrong">Jaylon Smith
-            <input type="radio" class="q2" name="question2" value="Answer">Leighton Vander Esch
-            <input type="radio" class="q2" name="question2" value="wrong">Sean Lee
+            <div id="radio">
+                <p>In what year was the city of Dallas granted an NFL expansion franchise?</p>
+                <input type="radio" class="q1" name="question1" value="answer">1960
+                <input type="radio" class="q1" name="question1" value="wrong">1958
+                <input type="radio" class="q1" name="question1" value="wrong">2001
 
-            <p>Which player holds the team record for longest reception by a rookie?</p>
-            <input type="radio" class="q3" name="question3" value="wrong">Dez Bryant
-            <input type="radio" class="q3" name="question3" value="Answer">Ezekiel Elliot
-            <input type="radio" class="q3" name="question3" value="wrong">Michael Irvin
+                <p>What player holds the Cowboys rookie record for tackles?</p>
+                <input type="radio" class="q2" name="question2" value="wrong">Jaylon Smith
+                <input type="radio" class="q2" name="question2" value="answer">Leighton Vander Esch
+                <input type="radio" class="q2" name="question2" value="wrong">Sean Lee
 
-            <p>Who purchased the Dallas Cowboys in 1989?</p>
-            <input type="radio" class="q4" name="question4" value="wrong">Henry Ford
-            <input type="radio" class="q4" name="question4" value="Answer">Jerry Jones
-            <input type="radio" class="q4" name="question4" value="wrong">Bedford Wynne
+                <p>Which player holds the team record for longest reception by a rookie?</p>
+                <input type="radio" class="q3" name="question3" value="wrong">Dez Bryant
+                <input type="radio" class="q3" name="question3" value="answer">Ezekiel Elliot
+                <input type="radio" class="q3" name="question3" value="wrong">Michael Irvin
 
-            <p>How many Super Bowls have the Dallas cowboys won?</p>
-            <input type="radio" class="q5" name="question5" value="wrong">3
-            <input type="radio" class="q5" name="question5" value="wrong">7
-            <input type="radio" class="q5" name="question5" value="Answer">5
-            <br>
-            <br>
-            <input id="button" type="button" value="Submit">
+                <p>Who purchased the Dallas Cowboys in 1989?</p>
+                <input type="radio" class="q4" name="question4" value="wrong">Henry Ford
+                <input type="radio" class="q4" name="question4" value="answer">Jerry Jones
+                <input type="radio" class="q4" name="question4" value="wrong">Bedford Wynne
 
+                <p>How many Super Bowls have the Dallas cowboys won?</p>
+                <input type="radio" class="q5" name="question5" value="wrong">3
+                <input type="radio" class="q5" name="question5" value="wrong">7
+                <input type="radio" class="q5" name="question5" value="answer">5
+                <br>
+                <br>
+                <input id="button" type="button" value="Submit">
+            </div>
         </form>
 
-        <div id="finished-div">
+
+        <div id="finished">
             <p>Numer of Answers Correct: <span id="correct"></span></p>
             <p>Number of Answers Wrong: <span id="wrong"></span></p>
             <p>Not Completed: <span id="not-answered"></span></p>

@@ -13,113 +13,6 @@ correctText = $("#correct");
 wrongText = $("#wrong");
 unansweredText = $("#not-answered");
 
-function startGame() {
-    $(document).ready(function () {
-        var radio = $("input[name='question1']");
-        radio.change(function () {
-            var filtered = radio.filter(":checked");
-
-            console.log(filtered.val());
-            var valFilter = filtered.val();
-
-            if (valFilter === "answer") {
-                correct++;
-                console.log(correct)
-            }
-            if (valFilter === "wrong") {
-                console.log(wrong);
-                wrong++;
-            }
-
-
-
-        })
-    });
-    $(document).ready(function () {
-        var radio = $("input[name='question2']");
-        radio.change(function () {
-            var filtered = radio.filter(":checked");
-
-            console.log(filtered.val());
-            var valFilter = filtered.val();
-
-            if (valFilter === "answer") {
-                correct++;
-                console.log(correct)
-            }
-            if (valFilter === "wrong") {
-                console.log(wrong);
-                wrong++;
-            }
-
-
-
-        })
-    });
-    $(document).ready(function () {
-        var radio = $("input[name='question3']");
-        radio.change(function () {
-            var filtered = radio.filter(":checked");
-
-            console.log(filtered.val());
-            var valFilter = filtered.val();
-
-            if (valFilter === "answer") {
-                correct++;
-                console.log(correct)
-            }
-            if (valFilter === "wrong") {
-                console.log(wrong);
-                wrong++;
-            }
-
-
-
-        })
-    });
-    $(document).ready(function () {
-        var radio = $("input[name='question4']");
-        radio.change(function () {
-            var filtered = radio.filter(":checked");
-
-            console.log(filtered.val());
-            var valFilter = filtered.val();
-
-            if (valFilter === "answer") {
-                correct++;
-                console.log(correct)
-            }
-            if (valFilter === "wrong") {
-                console.log(wrong);
-                wrong++;
-            }
-
-        })
-    });
-    $(document).ready(function () {
-        var radio = $("input[name='question5']");
-        radio.change(function () {
-            var filtered = radio.filter(":checked");
-
-            console.log(filtered.val());
-            var valFilter = filtered.val();
-
-            if (valFilter === "answer") {
-                correct++;
-                console.log(correct)
-            }
-            if (valFilter === "wrong") {
-                console.log(wrong);
-                wrong++;
-            }
-        })
-    });
-
-};
-startGame();
-
-
-
 function displayFinished() {
     $("#finished").css({
         "visibility": "visible", "position": "absolute", "top": "25%", "left": "30%",
@@ -188,16 +81,34 @@ $("#start-button").on("click", function () {
 
 $("#button").on("click", function () {
     console.log("submit");
+    $(document).ready(function () {
+        for (i = 1; i < 6; i++) {
 
-    displayFinished();
-    $("#title").css("visibility", "visible");
-    displayMessage();
+            var radio = $("input[name='question" + i + "']");
+            var filtered = radio.filter(":checked");
+            console.log(filtered.val());
+            var valFilter = filtered.val();
 
-    correctText.text(correct);
-    wrongText.text(wrong);
+            if (valFilter === "answer") {
+                correct++;
+                console.log(correct)
+            }
+            if (valFilter === "wrong") {
+                console.log(wrong);
+                wrong++;
+            }
+        };
 
+        displayFinished();
+        $("#title").css("visibility", "visible");
+        displayMessage();
+
+        correctText.text(correct);
+        wrongText.text(wrong);
+    });
 
 });
+
 
 
 

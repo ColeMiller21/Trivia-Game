@@ -39,6 +39,7 @@ function displayMessage() {
         $("#message").text(message[2]);
         $("#image").attr("src", pictures[2]);
     }
+
 };
 
 
@@ -97,6 +98,7 @@ $("#button").on("click", function () {
                 console.log(wrong);
                 wrong++;
             }
+
         };
 
         displayFinished();

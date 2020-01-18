@@ -1,5 +1,8 @@
 # Dallas Cowboys Trivia Game
 
+<div align="left">
+    <img src="assets/images/Trivia.png" width="400px"</img> 
+</div>
 
 ## Table of Contents
 
